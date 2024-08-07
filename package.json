@@ -2,6 +2,7 @@
   "name": "chai-backend",
   "version": "1.0.0",
   "description": "backend project",
+  "type": "module",
   "main": "index.js",
   "dependencies": {
     "accepts": "^1.3.8",
@@ -69,9 +70,11 @@
     "utils-merge": "^1.0.1",
     "vary": "^1.1.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "javascript"
